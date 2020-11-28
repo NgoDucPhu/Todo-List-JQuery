@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Todo List</h1>
+        <form class="form">
+            <input type="text" class="form__input-todo" placeholder="Input todo...">
+            <button class="btn btn--add">
+                ADD TODO
+            </button>
+        </form>
+
+        <div class="todo-uncompleted">
+            <p class="todo-uncompleted__title">NOT COMPLETED</p>
+            <p class="todo-uncompleted__notify">Chưa có todo nào <i class="far fa-sticky-note"></i></p>
+            <ul class="todo-uncompleted__list"></ul>
+        </div>
+
+        <div class="todo-completed">
+            <p class="todo-completed__title">COMPLETED</p>
+            <p class="todo-completed__notify">Chưa có todo nào <i class="far fa-sticky-note"></i></p>
+            <ul class="todo-completed__list"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
